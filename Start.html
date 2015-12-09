@@ -5,13 +5,12 @@ Usage for Query js module
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Example of the Module pattern</title>
 	<meta charset="utf-8" />
 </head>
 <body>
-<script src="Query.js"></script>
-<script>
-    $(function () {      
+<script src="query.js"></script>
+<script>        
         var table = [
         { col1: 'v1', col2: 'v2', col3: 'v3' },
         { col1: 'v4', col2: 'v5', col3: 'v6' },
@@ -35,8 +34,7 @@ Usage for Query js module
             return row.col1 !== 'v4';
         });
         console.log('--------------------------------------');
-        console.log(myQuery.get());        
-    })    
+        console.log(myQuery.get());               
 </script>
 </body>
 </html>
